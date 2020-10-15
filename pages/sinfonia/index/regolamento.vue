@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-row align="center" align-content="center" justify="center">
+    <v-row  align="start" justify="center">
       <v-col cols="12">
         <h1 class="fulcron-font text-center" style="font-size: 7vh">
           Regolamento
@@ -21,7 +21,7 @@
         @click="toTop"
         ><v-icon>fa-arrow-up</v-icon>
       </v-btn>
-      <v-col sm="12" md="7">
+      <v-col sm="12" lg="7" md="8">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font"
             >Correttezza e rispetto verso gli altri</v-card-title
@@ -39,7 +39,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="7">
+      <v-col sm="12" lg="7" md="8">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font">Onestà</v-card-title>
           <v-card-text class="body-1">
@@ -66,7 +66,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="7">
+      <v-col sm="12" lg="7" md="8">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font">Sicurezza</v-card-title>
           <v-card-text class="body-1">
@@ -78,7 +78,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="7">
+      <v-col sm="12" lg="7" md="8">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font">Differenza fra "In Gioco" e "Fuori Gioco"</v-card-title>
           <v-card-text class="body-1">
@@ -118,7 +118,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="7">
+      <v-col sm="12" lg="7" md="8">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font">PG, PNG & PGOS: tre modi di giocare</v-card-title>
           <v-card-text class="body-1">
@@ -132,7 +132,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="7">
+      <v-col sm="12" md="8" lg="7">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font">I PAB, la moneta di scambio</v-card-title>
           <v-card-text class="body-1">
@@ -143,7 +143,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col sm="12" md="7">
+      <v-col sm="12" lg="7" md="8">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font">Il nostro regolamento (Versione 4.1)</v-card-title>
           <v-card-text class="body-1">
