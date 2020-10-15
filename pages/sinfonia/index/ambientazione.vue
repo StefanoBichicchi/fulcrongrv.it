@@ -21,7 +21,7 @@
       </v-btn>
 
       <v-col sm="12" md="10" lg="8"
-        ><v-banner sticky single-line color="accent" rounded
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
           ><h2 class="fulcron-font white--text">Cosa è Fulcron?</h2></v-banner
         >
         <br />
@@ -46,7 +46,7 @@
       >
 
       <v-col sm="12" md="10" lg="8"
-        ><v-banner sticky single-line color="accent" rounded
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
           ><h2 class="fulcron-font text-right white--text">
             La Geografia di Fulcron
           </h2></v-banner
@@ -79,7 +79,7 @@
       </v-col>
 
       <v-col sm="12" md="10" lg="8"
-        ><v-banner sticky single-line color="accent" rounded
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
           ><h2 class="fulcron-font white--text">
             La Politica di Fulcron
           </h2></v-banner
@@ -100,7 +100,7 @@
       </v-col>
 
       <v-col sm="12" md="10" lg="8"
-        ><v-banner sticky single-line color="accent" rounded
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
           ><h2 class="fulcron-font white--text text-right">
             Le Razze di Fulcron
           </h2></v-banner
@@ -148,7 +148,7 @@
       </v-col>
 
       <v-col sm="12" md="10" lg="8"
-        ><v-banner sticky single-line color="accent" rounded
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
           ><h2 class="fulcron-font white--text">
             Le Religioni di Fulcron
           </h2></v-banner
@@ -171,7 +171,7 @@
       </v-col>
 
       <v-col sm="12" md="10" lg="8"
-        ><v-banner sticky single-line color="accent" rounded
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
           ><h2 class="fulcron-font white--text text-right">
             La Storia di Fulcron
           </h2></v-banner
@@ -344,5 +344,9 @@ export default {
 <style>
 li {
   margin-bottom: 5px;
+}
+
+.flat {
+  z-index: 0;
 }
 </style>
