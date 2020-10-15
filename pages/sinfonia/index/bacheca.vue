@@ -13,6 +13,18 @@
           Rimani aggiornato sul mondo di Fulcron
         </h1>
       </v-col>
+      <v-btn
+        v-scroll="onScroll"
+        v-show="fab"
+        fab
+        dark
+        fixed
+        bottom
+        right
+        color="primary"
+        @click="toTop"
+        ><v-icon>fa-arrow-up</v-icon>
+      </v-btn>
       <v-col v-for="post in posts" :key="post.title" sm="12" md="6" lg="4">
         <v-card outlined shaped flat>
           <v-img v-if="post.image" :src="post.image" height="200"></v-img>
@@ -39,6 +51,23 @@
 export default {
   async asyncData({ $axios }) {
     return { posts: await $axios.$get('/api/posts') }
+  },
+
+  data() {
+    return {
+      fab: false,
+    }
+  },
+
+  methods: {
+    onScroll(e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset || e.target.scrollTop || 0
+      this.fab = top > 20
+    },
+    toTop() {
+      this.$vuetify.goTo(0)
+    },
   },
 
   head() {

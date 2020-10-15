@@ -9,6 +9,18 @@
           Regole basilari per ogni tipo di LARP (o gioco di ruolo dal vivo)
         </h1>
       </v-col>
+      <v-btn
+        v-scroll="onScroll"
+        v-show="fab"
+        fab
+        dark
+        fixed
+        bottom
+        right
+        color="primary"
+        @click="toTop"
+        ><v-icon>fa-arrow-up</v-icon>
+      </v-btn>
       <v-col sm="12" md="7">
         <v-card color="white" rounded outlined elevation="12">
           <v-card-title class="fulcron-font"
@@ -73,28 +85,36 @@
             <p>
               Nella dinamica di un Gioco di Ruolo dal Vivo, il Personaggio e il Gioca­tore non vanno identificati. In particolare, le azioni della persona re­ale (il Giocatore) influenzano quelle del Personaggio immaginario (il Personaggio) in modi che devono essere regolamentati, per evitare equivoci.
               <br /><br />
+            </p>
               <ul>
                 <li>Per le azioni di Gioco si usa il termine In Gioco (IG)</li>
                 <li>Per azioni non legate alle dinamiche di gioco si usa il termine Fuori Gioco (FG)</li>
               </ul> <br /><br />
+            <p>
               È essenziale saper distinguere le cose In Gioco da quelle Fuori Gioco ed agire di conseguenza, a partire dalle cose più semplici.<br /><br />
               Per esempio, IG non è corretto dire:
-              <blockquote>
-                “Quel PNG ha 3 PF e non dichiara nulla di strano: possiamo farcela!”
-              </blockquote> <br />
-              mentre è molto più corretta un’affermazione sul genere<br /><br />
-              <blockquote>
-                “Ho visto combattere quell’Orco, non è robusto come si dice e le sue armi paiono di pessima fattura: è nostro!”
-              </blockquote> <br />
-              Allo stesso modo, vanno evitate frasi come <br /><br />
-              <blockquote>
-                “Ci serve un’arma che dichiari HOLY”
-              </blockquote> <br />
-              Molto meglio<br /><br />
-              <blockquote>
-                “Abbiamo bisogno di una spada sacra”
-              </blockquote>
             </p>
+            <blockquote>
+              “Quel PNG ha 3 PF e non dichiara nulla di strano: possiamo farcela!”
+            </blockquote> <br />
+            <p>
+              mentre è molto più corretta un’affermazione sul genere
+            </p>
+            <blockquote>
+              “Ho visto combattere quell’Orco, non è robusto come si dice e le sue armi paiono di pessima fattura: è nostro!”
+            </blockquote> <br />
+            <p>
+              Allo stesso modo, vanno evitate frasi come
+            </p>
+            <blockquote>
+              “Ci serve un’arma che dichiari HOLY”
+            </blockquote> <br />
+            <p>
+              Molto meglio
+            </p>
+            <blockquote>
+              “Abbiamo bisogno di una spada sacra”
+            </blockquote>
           </v-card-text>
         </v-card>
       </v-col>
@@ -146,6 +166,23 @@
 
 <script>
 export default {
+
+  data() {
+    return {
+      fab: false
+    }
+  },
+
+  methods: {
+    onScroll(e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset || e.target.scrollTop || 0
+      this.fab = top > 20
+    },
+    toTop() {
+      this.$vuetify.goTo(0)
+    },
+  },
 
   head() {
     return {

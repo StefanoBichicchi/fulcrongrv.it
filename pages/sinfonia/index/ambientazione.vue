@@ -7,6 +7,19 @@
         </h1>
       </v-col>
 
+      <v-btn
+        v-scroll="onScroll"
+        v-show="fab"
+        fab
+        dark
+        fixed
+        bottom
+        right
+        color="primary"
+        @click="toTop"
+        ><v-icon>fa-arrow-up</v-icon>
+      </v-btn>
+
       <v-col sm="12" md="10" lg="8"
         ><v-banner sticky single-line color="accent" rounded
           ><h2 class="fulcron-font white--text">Cosa è Fulcron?</h2></v-banner
@@ -197,6 +210,7 @@
 export default {
   data() {
     return {
+      fab: false,
       timeline1: [
         {
           date: '2000',
@@ -306,6 +320,17 @@ export default {
         },
       ],
     }
+  },
+
+  methods: {
+    onScroll(e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset || e.target.scrollTop || 0
+      this.fab = top > 20
+    },
+    toTop() {
+      this.$vuetify.goTo(0)
+    },
   },
 
   head() {
