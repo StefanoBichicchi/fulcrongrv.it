@@ -32,6 +32,12 @@ export default {
   async asyncData({ $axios }) {
     return { albums: await $axios.$get('/api/album') }
   },
+
+  head() {
+    return {
+      title: 'Gallery',
+    }
+  },
 }
 </script>
 

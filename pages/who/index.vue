@@ -100,6 +100,12 @@ export default {
       return this.$vuetify.breakpoint.mobile ? 300 : 500
     },
   },
+
+  head() {
+    return {
+      title: 'Chi siamo',
+    }
+  },
 }
 </script>
 

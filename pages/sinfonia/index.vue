@@ -36,10 +36,10 @@ export default {
       let currentPath = this.$nuxt.$route.path.split('/')[2]
       let currentIndexPath = this.tabs.indexOf(currentPath)
 
-      console.log(currentPath, currentIndexPath)
+      if (currentIndexPath === -1) return
 
       if (direction === 'left') {
-        if (currentIndexPath === 3) return
+        if (currentIndexPath >= 2) return
         else {
           this.$router.push({
             path: '/sinfonia/' + this.tabs[currentIndexPath + 1],
@@ -49,7 +49,7 @@ export default {
       }
 
       if (direction === 'right') {
-        if (currentIndexPath === 0) return
+        if (currentIndexPath <= 0) return
         else {
           this.$router.push({
             path: '/sinfonia/' + this.tabs[currentIndexPath - 1],

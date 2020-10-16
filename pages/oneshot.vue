@@ -46,6 +46,12 @@ export default {
   async asyncData({ $axios }) {
     return { oneshots: await $axios.$get('/api/oneshot') }
   },
+
+  head() {
+    return {
+      title: 'Oneshot',
+    }
+  },
 }
 </script>
 
