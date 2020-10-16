@@ -67,6 +67,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://pwa.nuxtjs.org/setup
+    '@nuxtjs/pwa',
   ],
 
   serverMiddleware: {
@@ -81,6 +83,13 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  pwa: {
+    manifest: {
+      name: 'FulcronGRV',
+      lang: 'it',
+    },
+  },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
