@@ -13,7 +13,12 @@
         {{ tab }}
       </v-tab>
     </v-tabs>
-    <nuxt-child></nuxt-child>
+    <nuxt-child
+      v-touch="{
+        left: () => swipe('left'),
+        right: () => swipe('right'),
+      }"
+    ></nuxt-child>
   </div>
 </template>
 
@@ -24,6 +29,35 @@ export default {
       tabState: false,
       tabs: ['regolamento', 'ambientazione', 'bacheca'],
     }
+  },
+
+  methods: {
+    swipe(direction) {
+      let currentPath = this.$nuxt.$route.path.split('/')[2]
+      let currentIndexPath = this.tabs.indexOf(currentPath)
+
+      console.log(currentPath, currentIndexPath)
+
+      if (direction === 'left') {
+        if (currentIndexPath === 3) return
+        else {
+          this.$router.push({
+            path: '/sinfonia/' + this.tabs[currentIndexPath + 1],
+          })
+        }
+        return
+      }
+
+      if (direction === 'right') {
+        if (currentIndexPath === 0) return
+        else {
+          this.$router.push({
+            path: '/sinfonia/' + this.tabs[currentIndexPath - 1],
+          })
+        }
+        return
+      }
+    },
   },
 
   mounted() {
