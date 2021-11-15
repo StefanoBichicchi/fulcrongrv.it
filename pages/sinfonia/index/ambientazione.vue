@@ -25,6 +25,23 @@
           ><h2 class="fulcron-font white--text">Cosa è Fulcron?</h2></v-banner
         >
         <br />
+        <p class="text-center">
+          <em>
+            Sette furono gli Dei.<br />
+            Sette cantarono e così cantando crearono il Tutto. <br />
+            Cantava Hava, Dea del Cielo e dell’Aria. <br />
+            Cantava Surya, Dio del Sole e della Vita. <br />
+            Canatava Andhera, Dio della Notte e della Morte. <br />
+            Cantava Yud’ah, Dio della Guerra e del Fuoco. <br />
+            Cantava Samudra, Dea delle Acque. <br />
+            Cantava Samajhadara, Dea della Sapienza.<br />
+            Cantava Mausama, Dio del Mutamento. <br /><br />
+            Così nacque Fulcron, l’Anello, e con esso le razze dei mortali che
+            lo abitano.<br />
+            Ere dopo la sua creazione, tanti sono i regni che i mortali hanno
+            creato.
+          </em>
+        </p>
         <p>
           Fulcron è un "Anello" senza dubbio, ma solo per quello che ne sappiamo
           noi perchè nessuno ne ha mai varcato i confini esterni. <br />
@@ -57,23 +74,59 @@
           che lo abitano, anche per la sua geografia. La terra conosciuta di
           Fulcron è chiamata L'Anello proprio per la sua forma caratteristica.
           <br /><br />
-          Il territorio è un'enorme anello di terra con al centro il così detto
-          Mare Interno. I confini esterni oltre i quali solo pochissimi si sono
-          avventurati sono diversi:
+          La nostra ambientazione di divide in cinque macro regioni, ognuna con
+          caratteristiche e peculiarità proprie. Non preoccuparti se non conosci
+          a menadito l’ambientazione di Fulcron: ad ogni evento verranno fornite
+          le informazioni necessarie per giocare senza problemi e, se vorrai
+          approfondire, potrai sempre consultare la nostra Wikia, disponibile
+          sul nostro sito.
         </p>
         <ul>
           <li>
-            A nord una landa perennemente congelata e sotto le gelide morse del
-            freddo
+            <strong> Il Nord</strong>, ispirato all’Europa del basso medioevo, è
+            composto da una grande varietà di Regni. Tra i più significativi
+            ricordiamo il Regno di Ilshaka, retto dal grande sovrano guerriero
+            Nymbra Shoot, un re ormai molto anziano che fu decisivo nel
+            mantenere il Nord unito in molte delle guerre del passato, e
+            Lungacosta, regno affacciato sul mare governato da una regina
+            ambiziosa, Elaine Moonsharp.
           </li>
-          <li>A est un deserto sconfinato e arido</li>
           <li>
-            A sud una palude di cui non si conoscono ne i confini ne la sua
-            conformazione interna
+            <strong>L’Est</strong>, ispirato alle grandi civiltà asiatiche e
+            nordafricane, l’Est è suddiviso in tre grandi regioni. Verso nord
+            troviamo le Città Libere del Deserto, che si governano in autonomia,
+            Tra di esse spicca Partaros, da cui si è originato il grande e
+            potente Ordine dei Guaritori. Nelle Terre Verdi di Jotai sorge
+            invece l’Impero dei Dodici Fiori, attualmente governato
+            dall’autoproclamatosi imperatore Doran. Infine, il sultanato degli
+            Arak, composto da nomadi del deserto governati da un ricco e potente
+            sultano.
           </li>
           <li>
-            Ad ovest un'altissima catena montuosa che cela agli occhi dei popoli
-            qualsiasi cosa possa esserci al di là
+            <strong>Il Sud</strong>, ispirato alla cultura greca e romana del
+            mondo classico. Una grande muraglia si estendeva lungo tutto il
+            confine meridionale del regno e lo separava dai Diaforos, creature
+            orribili e bellicose. Qualche anno fa il muro è crollato,
+            stravolgendo ogni equilibrio geopolitico della zona. Attualmente il
+            Sud è frammentato e diviso: l’Antico Regno cerca di resistere,
+            mentre una nuova entità territoriale, Nea Imera, è sorta con la
+            speranza di unire uomini e Diaforos. Intere regioni sono perdute
+            nell’anarchia e nel disordine mentre nelle Tre Gemme del Sud, ricche
+            città di traffici e commerci, i mercanti hanno approfittato della
+            situazione per prendere il potere.
+          </li>
+          <li>
+            <strong>L’Ovest</strong>, ispirato alle americhe precolombiane.
+            Grandi foreste vergini si estendono per tutto il territorio e le
+            grandi potenze di Fulcron competono per colonizzare la zona. Grandi
+            tribù di guerrieri nomadi vivono in queste terre.
+          </li>
+          <li>
+            Infine,<strong> il Mare Interno</strong>, il grande oceano che si
+            trova al centro di Fulcron e che gli conferisce la caratteristica
+            forma ad Anello. Molti sono i pirati che solcano questi mari, dato
+            che nessun regnante è mai stato abbastanza potente da estendere il
+            suo controllo su di essi.
           </li>
         </ul>
       </v-col>
@@ -90,7 +143,7 @@
           territoriali.
         </p>
         <p>
-          Durante la Grande Guerra, scoppiata nel 2811, erano questi quattro
+          Durante la Grande Guerra, scoppiata nel 2712, erano questi quattro
           grandi regni a combattersi ferocemente l'un l'altro, nel tentativo di
           instaurare la propria supremazia. Dopo la guerra, questi regni si sono
           per la maggior parte disgregati in stati più piccoli, ma la divisione
@@ -201,6 +254,27 @@
             {{ event.event }}
           </v-timeline-item>
         </v-timeline>
+      </v-col>
+
+      <v-col sm="12" md="10" lg="8"
+        ><v-banner style="z-index: 0" sticky single-line color="accent" rounded
+          ><h2 class="fulcron-font white--text">
+            La Wikia di Fulcron
+          </h2></v-banner
+        >
+        <br />
+        <p class="text-center">
+          Per approfondire (ed eventualmente contribuire) all'ambientazione di
+          Fulcron, visita la nostra wikia! <br />
+          <br />
+          <v-btn
+            color="primary"
+            rounded
+            x-large
+            href="https://wikia.fulcrongrv.it"
+            >Vai alla Wikia!</v-btn
+          >
+        </p>
       </v-col>
     </v-row>
   </v-container>

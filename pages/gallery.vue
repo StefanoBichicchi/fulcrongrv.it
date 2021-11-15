@@ -17,7 +17,7 @@
           <v-card-actions>
             <v-spacer />
             <v-btn text link :href="'/api/foto' + album.photos">Vedi</v-btn>
-            <v-btn text link :href="album.highQuality"
+            <v-btn text link :href="album.highQuality" v-if="album.highQuality"
               >Scarica in alta qualità</v-btn
             >
           </v-card-actions>

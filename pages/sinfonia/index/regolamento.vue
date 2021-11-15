@@ -217,29 +217,44 @@
               justify="center"
             >
               <v-col cols="12">
-                <v-btn text href="/documents/RegolamentoEventi.pdf"
-                  >Regolamento eventi</v-btn
+                <v-btn text href="/documents/FulcronGRV-Guida_Eventi.pdf"
+                  >Guida Eventi</v-btn
                 >
               </v-col>
               <v-col cols="12">
-                <v-btn text href="/documents/Abilità.pdf"
-                  >Abilità generiche</v-btn
+                <v-btn text href="/documents/FulcronGRV-Manuale_Abilità.pdf"
+                  >Manuale delle Abilità</v-btn
                 >
               </v-col>
               <v-col cols="12">
-                <v-btn text href="/documents/Magia.pdf">Magia</v-btn>
+                <v-btn text href="/documents/FulcronGRV-Guida_alla_Magia.pdf"
+                  >Guida alla Magia</v-btn
+                >
+              </v-col>
+              <v-col cols="12">
+                <v-btn text href="/documents/FulcronGRV-Arti&Mestieri.pdf"
+                  >Arti&Mestieri</v-btn
+                >
               </v-col>
             </v-row>
           </v-card-text>
           <v-card-actions v-if="!$vuetify.breakpoint.mobile">
             <v-spacer />
-            <v-btn text href="/documents/RegolamentoEventi.pdf"
-              >Regolamento eventi</v-btn
+            <v-btn text href="/documents/FulcronGRV-Guida_Eventi.pdf"
+              >Guida Eventi</v-btn
             >
             <br />
-            <v-btn text href="/documents/Abilità.pdf">Abilità generiche</v-btn>
+            <v-btn text href="/documents/FulcronGRV-Manuale_Abilità.pdf"
+              >Manuale delle Abilità</v-btn
+            >
             <br />
-            <v-btn text href="/documents/Magia.pdf">Magia</v-btn>
+            <v-btn text href="/documents/FulcronGRV-Guida_alla_Magia.pdf"
+              >Guida alla Magia</v-btn
+            >
+            <br />
+            <v-btn text href="/documents/FulcronGRV-Arti&Mestieri.pdf"
+              >Arti&Mestieri</v-btn
+            >
           </v-card-actions>
         </v-card>
       </v-col>

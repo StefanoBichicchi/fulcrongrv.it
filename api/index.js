@@ -65,6 +65,12 @@ try {
       title: 'Il Banchetto dei Guitti',
     })
   )
+  app.use(
+    '/foto/citta-dei-desideri',
+    Gallery(join(albumUrl, 'citta-dei-desideri'), {
+      title: 'La Città dei Desideri',
+    })
+  )
 
   connectToDB()
 
